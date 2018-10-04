@@ -1,8 +1,0 @@
-window.JSOnClickHandler = 
-{
-	cleanCurrentOnClickHandler: function() 
-	{
-		var link = document.getElementById('canvas');		
-	 	link.onclick = function() {};
-	}
-};

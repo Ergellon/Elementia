@@ -26,7 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Spellbook.unity
     guid: 94513be8a72132345818d46c35c75adc
-  - enabled: 1
-    path: Assets/TrueVK/Test/TestVk.unity
-    guid: eb41ba33ca1504473a66fbb65ad6c1b0
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

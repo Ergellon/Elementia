@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class BattleUIManager : MonoBehaviour {
 
-    Player player, enemy;
+    public Player player, enemy;
 
     public Text playername, enemyname;
 
@@ -47,7 +47,8 @@ public class BattleUIManager : MonoBehaviour {
     public Text selectedcarduiattack;
     public Text selectedcarduihealth;
     public Text selectedcarduimanacost;
-        public Image selectedcarduiicon;
+    public Image selectedcarduiicon;
+    public int selectedcardnumber;
 
     public Text chattext;
     public Text inputchattext;
@@ -139,14 +140,30 @@ public class BattleUIManager : MonoBehaviour {
     }
     public void CardSelectedUI(int n)
     {
+        selectedcardnumber = n;
+        CardShowInfo(n);
+    }
+    public void CardShowInfo(int n)
+    {
         cardname.text = player.spellbook[n].cardname;
         carddesciption.text = player.spellbook[n].description;
 
 
         selectedcarduiattack.text = player.spellbook[n].attack.ToString();
-        selectedcarduihealth.text = player.spellbook[n].health.ToString() ;
+        selectedcarduihealth.text = player.spellbook[n].health.ToString();
         selectedcarduimanacost.text = player.spellbook[n].manacost.ToString();
         selectedcarduiicon.sprite = player.spellbook[n].icon;
+    }
+    public void CardShowInfoEnemy(int n)
+    {
+        cardname.text = enemy.spellbook[n].cardname;
+        carddesciption.text = enemy.spellbook[n].description;
+
+
+        selectedcarduiattack.text = enemy.spellbook[n].attack.ToString();
+        selectedcarduihealth.text = enemy.spellbook[n].health.ToString();
+        selectedcarduimanacost.text = enemy.spellbook[n].manacost.ToString();
+        selectedcarduiicon.sprite = enemy.spellbook[n].icon;
     }
     public void RemoveCreatureOnUI(Player p, int slot)
     {

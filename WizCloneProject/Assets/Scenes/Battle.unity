@@ -357,6 +357,16 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9268374ee4020e7498390824d71d9b36, type: 2}
   m_IsPrefabParent: 0
@@ -1344,6 +1354,21 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: onbattlefield
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9268374ee4020e7498390824d71d9b36, type: 2}
   m_IsPrefabParent: 0
@@ -1995,6 +2020,16 @@ Prefab:
     - target: {fileID: 114466312784762386, guid: 9268374ee4020e7498390824d71d9b36,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
       value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3383,6 +3418,16 @@ Prefab:
     - target: {fileID: 114466312784762386, guid: 9268374ee4020e7498390824d71d9b36,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
       value: 21
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -8013,6 +8058,21 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: onbattlefield
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9268374ee4020e7498390824d71d9b36, type: 2}
   m_IsPrefabParent: 0
@@ -8214,6 +8274,16 @@ Prefab:
     - target: {fileID: 114466312784762386, guid: 9268374ee4020e7498390824d71d9b36,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
       value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -8720,6 +8790,26 @@ Prefab:
     - target: {fileID: 114466312784762386, guid: 9268374ee4020e7498390824d71d9b36,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: onbattlefield
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: isenemycard
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -11448,6 +11538,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6366ccd31a7056147b61e746bd856b7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  enemy: {fileID: 0}
   playername: {fileID: 722956925}
   enemyname: {fileID: 64638339}
   playerhealth: {fileID: 1609717013}
@@ -11691,6 +11783,7 @@ MonoBehaviour:
   selectedcarduihealth: {fileID: 58577938}
   selectedcarduimanacost: {fileID: 58577937}
   selectedcarduiicon: {fileID: 58577936}
+  selectedcardnumber: 0
   chattext: {fileID: 426835217}
   inputchattext: {fileID: 629904733}
   portraits:
@@ -13356,6 +13449,16 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9268374ee4020e7498390824d71d9b36, type: 2}
   m_IsPrefabParent: 0
@@ -14231,6 +14334,21 @@ Prefab:
     - target: {fileID: 114466312784762386, guid: 9268374ee4020e7498390824d71d9b36,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: onbattlefield
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
       value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -17754,6 +17872,16 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9268374ee4020e7498390824d71d9b36, type: 2}
   m_IsPrefabParent: 0
@@ -18790,6 +18918,21 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: onbattlefield
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9268374ee4020e7498390824d71d9b36, type: 2}
   m_IsPrefabParent: 0
@@ -18991,6 +19134,21 @@ Prefab:
     - target: {fileID: 114466312784762386, guid: 9268374ee4020e7498390824d71d9b36,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: onbattlefield
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
       value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -19533,6 +19691,16 @@ Prefab:
     - target: {fileID: 114466312784762386, guid: 9268374ee4020e7498390824d71d9b36,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
       value: 19
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -20961,6 +21129,16 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
       value: 17
       objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
+      value: 17
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9268374ee4020e7498390824d71d9b36, type: 2}
   m_IsPrefabParent: 0
@@ -21528,6 +21706,26 @@ Prefab:
     - target: {fileID: 114466312784762386, guid: 9268374ee4020e7498390824d71d9b36,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: onbattlefield
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: isenemycard
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
       value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -24392,6 +24590,16 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9268374ee4020e7498390824d71d9b36, type: 2}
   m_IsPrefabParent: 0
@@ -26975,6 +27183,26 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: onbattlefield
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: isenemycard
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9268374ee4020e7498390824d71d9b36, type: 2}
   m_IsPrefabParent: 0
@@ -27758,6 +27986,16 @@ Prefab:
     - target: {fileID: 114466312784762386, guid: 9268374ee4020e7498390824d71d9b36,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
       value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -28718,6 +28956,16 @@ Prefab:
     - target: {fileID: 114466312784762386, guid: 9268374ee4020e7498390824d71d9b36,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
       value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -30183,6 +30431,21 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: onbattlefield
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9268374ee4020e7498390824d71d9b36, type: 2}
   m_IsPrefabParent: 0
@@ -30571,6 +30834,16 @@ Prefab:
     - target: {fileID: 114466312784762386, guid: 9268374ee4020e7498390824d71d9b36,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
       value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -31645,6 +31918,21 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: onbattlefield
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9268374ee4020e7498390824d71d9b36, type: 2}
@@ -36037,6 +36325,26 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: onbattlefield
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: isenemycard
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9268374ee4020e7498390824d71d9b36, type: 2}
   m_IsPrefabParent: 0
@@ -39002,6 +39310,16 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9268374ee4020e7498390824d71d9b36, type: 2}
   m_IsPrefabParent: 0
@@ -41745,6 +42063,26 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: onbattlefield
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: isenemycard
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9268374ee4020e7498390824d71d9b36, type: 2}
   m_IsPrefabParent: 0
@@ -42961,6 +43299,26 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: onbattlefield
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: isenemycard
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9268374ee4020e7498390824d71d9b36, type: 2}
   m_IsPrefabParent: 0
@@ -43374,6 +43732,16 @@ Prefab:
     - target: {fileID: 114466312784762386, guid: 9268374ee4020e7498390824d71d9b36,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
       value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -44246,6 +44614,16 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
       value: 23
       objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9268374ee4020e7498390824d71d9b36, type: 2}
   m_IsPrefabParent: 0
@@ -44526,6 +44904,16 @@ Prefab:
     - target: {fileID: 114466312784762386, guid: 9268374ee4020e7498390824d71d9b36,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
       value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -49338,6 +49726,16 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9268374ee4020e7498390824d71d9b36, type: 2}
   m_IsPrefabParent: 0
@@ -50096,7 +50494,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000005722, y: -0.5}
+  m_AnchoredPosition: {x: 0, y: -0.5}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1740676147
@@ -51006,6 +51404,16 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9268374ee4020e7498390824d71d9b36, type: 2}
   m_IsPrefabParent: 0
@@ -51888,6 +52296,16 @@ Prefab:
     - target: {fileID: 114466312784762386, guid: 9268374ee4020e7498390824d71d9b36,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
       value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -55393,6 +55811,16 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9268374ee4020e7498390824d71d9b36, type: 2}
   m_IsPrefabParent: 0
@@ -56423,6 +56851,16 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
       value: 22
       objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9268374ee4020e7498390824d71d9b36, type: 2}
   m_IsPrefabParent: 0
@@ -56595,6 +57033,21 @@ Prefab:
     - target: {fileID: 114466312784762386, guid: 9268374ee4020e7498390824d71d9b36,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: onbattlefield
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
       value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -59764,6 +60217,21 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: onbattlefield
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: isenemycard
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9268374ee4020e7498390824d71d9b36, type: 2}
   m_IsPrefabParent: 0
@@ -60270,6 +60738,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9268374ee4020e7498390824d71d9b36, type: 2}
   m_IsPrefabParent: 0
@@ -60628,6 +61101,16 @@ Prefab:
     - target: {fileID: 114466312784762386, guid: 9268374ee4020e7498390824d71d9b36,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: battleUIManager
+      value: 
+      objectReference: {fileID: 430483904}
+    - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: n
       value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []

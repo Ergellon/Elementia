@@ -1539,6 +1539,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 58577934}
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &58577940 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114466312784762386, guid: 9268374ee4020e7498390824d71d9b36,
+    type: 2}
+  m_PrefabInternal: {fileID: 58577934}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &60577776
 GameObject:
   m_ObjectHideFlags: 0
@@ -11779,6 +11785,7 @@ MonoBehaviour:
   - {fileID: 124360601}
   - {fileID: 1985447232}
   - {fileID: 1534840242}
+  selectedcardbutton: {fileID: 58577940}
   selectedcarduiattack: {fileID: 58577939}
   selectedcarduihealth: {fileID: 58577938}
   selectedcarduimanacost: {fileID: 58577937}

@@ -44,6 +44,7 @@ public class BattleUIManager : MonoBehaviour {
     public List<Text> spellbookcost = new List<Text>();
     public List<Image> spellbookicon = new List<Image>();
 
+    public Button selectedcardbutton;
     public Text selectedcarduiattack;
     public Text selectedcarduihealth;
     public Text selectedcarduimanacost;
@@ -147,10 +148,18 @@ public class BattleUIManager : MonoBehaviour {
     {
         cardname.text = player.spellbook[n].cardname;
         carddesciption.text = player.spellbook[n].description;
-
-
-        selectedcarduiattack.text = player.spellbook[n].attack.ToString();
-        selectedcarduihealth.text = player.spellbook[n].health.ToString();
+        if (player.spellbook[n].iscreature == false)
+        {
+            selectedcardbutton.image.sprite = Resources.Load<Sprite>("karta_fon2");
+            selectedcarduiattack.text = " ";
+            selectedcarduihealth.text = " ";
+        }
+        else
+        {
+            selectedcardbutton.image.sprite = Resources.Load<Sprite>("karta_fon");
+            selectedcarduiattack.text = player.spellbook[n].attack.ToString();
+            selectedcarduihealth.text = player.spellbook[n].health.ToString();
+        }
         selectedcarduimanacost.text = player.spellbook[n].manacost.ToString();
         selectedcarduiicon.sprite = player.spellbook[n].icon;
     }
@@ -158,10 +167,18 @@ public class BattleUIManager : MonoBehaviour {
     {
         cardname.text = enemy.spellbook[n].cardname;
         carddesciption.text = enemy.spellbook[n].description;
-
-
-        selectedcarduiattack.text = enemy.spellbook[n].attack.ToString();
-        selectedcarduihealth.text = enemy.spellbook[n].health.ToString();
+        if (enemy.spellbook[n].iscreature == false)
+        {
+            selectedcardbutton.image.sprite = Resources.Load<Sprite>("karta_fon2");
+            selectedcarduiattack.text = " ";
+            selectedcarduihealth.text = " ";
+        }
+        else
+        {
+            selectedcardbutton.image.sprite = Resources.Load<Sprite>("karta_fon");
+            selectedcarduiattack.text = enemy.spellbook[n].attack.ToString();
+            selectedcarduihealth.text = enemy.spellbook[n].health.ToString();
+        }
         selectedcarduimanacost.text = enemy.spellbook[n].manacost.ToString();
         selectedcarduiicon.sprite = enemy.spellbook[n].icon;
     }

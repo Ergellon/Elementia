@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     public Text infotext;
     public Text infotextsmall;
     public Button blocker;
+    public Button backbutton;
 
 
     PhotonView photonView;
@@ -71,7 +72,7 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
-         if (playerone.spellbooksync == 1 && playertwo.spellbooksync == 1)
+        if (playerone.spellbooksync == 1 && playertwo.spellbooksync == 1)
         {
             LoadSpellbook();
 
@@ -87,6 +88,11 @@ public class GameManager : MonoBehaviour
             blocker.gameObject.SetActive(false);
             StartCoroutine(TurnInfo());
 
+        }
+
+        if (playerone.health < 0 || playertwo.health <0)
+        {
+            photonView.RPC("EndGame", RpcTarget.All);
         }
     }
     void LoadSpellbook()
@@ -271,5 +277,25 @@ public class GameManager : MonoBehaviour
     public void RPCShowDamageSequence()
     {
         StartCoroutine(battleUIManager.ShowDamageSequence());
+    }
+    [PunRPC]
+    public void EndGame()
+    {
+        localplayer.hasturn = false;
+        if (localplayer.health > 0)
+        {
+            infotext.text = "Вы победили!";
+
+        }
+        else
+        {
+            infotext.text = "Вы проиграли...";
+        }
+        backbutton.gameObject.SetActive(true);
+
+    }
+    public void BackToMenuButton()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
     }
 }

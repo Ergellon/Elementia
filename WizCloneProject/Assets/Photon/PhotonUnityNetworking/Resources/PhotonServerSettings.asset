@@ -38,4 +38,5 @@ MonoBehaviour:
   - SelectCard
   - UseFriendlySpell
   - UseSpell
+  - EndGame
   DisableAutoOpenWizard: 1

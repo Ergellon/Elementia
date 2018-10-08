@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Photon.Pun;
 
 
-public class ConnectionLauncher : Photon.PunBehaviour {
+public class ConnectionLauncher : MonoBehaviourPunCallbacks {
 
     string gameversion = "0.01";
 
@@ -13,7 +14,8 @@ public class ConnectionLauncher : Photon.PunBehaviour {
 
     void Awake()
     {
-        PhotonNetwork.automaticallySyncScene = true; 
+        PhotonNetwork.AutomaticallySyncScene = true;
+        PhotonNetwork.GameVersion = gameversion;
     }
 
     public void LoadSpellbook()
@@ -24,35 +26,35 @@ public class ConnectionLauncher : Photon.PunBehaviour {
     public void Connect ()
     {
         connecting.text = "Устанавливается связь с сервером...";      
-        if (PhotonNetwork.connectedAndReady)
+        if (PhotonNetwork.IsConnectedAndReady)
         {
             PhotonNetwork.JoinRandomRoom(); //maybe try JoinOrCreate later
         }
         else
         {
-            PhotonNetwork.ConnectUsingSettings(gameversion);
+            PhotonNetwork.ConnectUsingSettings();
         }
     }
     public override void OnConnectedToMaster()
     {
         PhotonNetwork.JoinRandomRoom();
     }
-    public override void OnPhotonRandomJoinFailed(object[] codeAndMsg)
+    public override void OnJoinRandomFailed(short returncode, string message)
     {
         PhotonNetwork.CreateRoom(null);
         connecting.text = "Ожидание второго игрока...";
     }
     public override void OnJoinedRoom()
     {
-       if (PhotonNetwork.room.PlayerCount == 2)   //number of players must be set in room properties, not here
+       if (PhotonNetwork.CurrentRoom.PlayerCount == 2)   //number of players must be set in room properties, not here
         {
           SceneManager.LoadScene("Battle");
         }
     }
     
-    public override void OnPhotonPlayerConnected(PhotonPlayer newPlayer)
+    public override void OnPlayerEnteredRoom(Photon.Realtime.Player newPlayer)
     {
-        if (PhotonNetwork.room.PlayerCount == 2)
+        if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
         {
             SceneManager.LoadScene("Battle");
         }

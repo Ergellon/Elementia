@@ -105,7 +105,7 @@ public class BattleUIManager : MonoBehaviour {
     }
     public void SetPlayer(Player pone, Player ptwo)
     {
-        if (pone.photonView.isMine)
+        if (pone.photonView.IsMine)
         {
             player = pone;
             enemy = ptwo;

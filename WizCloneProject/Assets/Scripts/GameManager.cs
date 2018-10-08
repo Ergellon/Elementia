@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 
 public class GameManager : MonoBehaviour
 {
@@ -23,10 +24,11 @@ public class GameManager : MonoBehaviour
     PhotonView photonView;
     void Start()
     {
+        
         infotext.text = "Загрузка...";
         photonView = PhotonView.Get(this);
         playerobjects = GameObject.FindGameObjectsWithTag("Player");
-        if (playerobjects[0].GetComponent<Player>().photonView.viewID < playerobjects[1].GetComponent<Player>().photonView.viewID)
+        if (playerobjects[0].GetComponent<Player>().photonView.ViewID < playerobjects[1].GetComponent<Player>().photonView.ViewID)
         {
             playerone = playerobjects[0].GetComponent<Player>();
             playertwo = playerobjects[1].GetComponent<Player>();
@@ -37,12 +39,12 @@ public class GameManager : MonoBehaviour
             playertwo = playerobjects[0].GetComponent<Player>();
         }
 
-        if (playerone.photonView.isMine)
+        if (playerone.photonView.IsMine)
         {
             localplayer = playerone;
             Debug.Log("local player one");
         }
-        else if (playertwo.photonView.isMine)
+        else if (playertwo.photonView.IsMine)
         {
             localplayer = playertwo;
             Debug.Log("local player two");
@@ -103,13 +105,13 @@ public class GameManager : MonoBehaviour
         battleUIManager.UpdateStats();
         battleUIManager.UpdateBattleline();
         //battleUIManager.SaveHealthBeforeAttack();
-        photonView.RPC("RPCSaveHealthBeforeAttack", PhotonTargets.All);
-        photonView.RPC("CheckSequence", PhotonTargets.All);
-        photonView.RPC("AttackSequence", PhotonTargets.All);
-        photonView.RPC("RPCShowDamageSequence", PhotonTargets.All);
+        photonView.RPC("RPCSaveHealthBeforeAttack", RpcTarget.All);
+        photonView.RPC("CheckSequence", RpcTarget.All);
+        photonView.RPC("AttackSequence", RpcTarget.All);
+        photonView.RPC("RPCShowDamageSequence", RpcTarget.All);
         battleUIManager.UpdateStats();
         battleUIManager.UpdateBattleline();
-        photonView.RPC("ChangeTurn", PhotonTargets.All);
+        photonView.RPC("ChangeTurn", RpcTarget.All);
 
 
     }
@@ -152,7 +154,7 @@ public class GameManager : MonoBehaviour
     {
         if (localplayer.hasturn == true)
         {
-            photonView.RPC("SelectCard", PhotonTargets.All, n);
+            photonView.RPC("SelectCard", RpcTarget.All, n);
         }
     }
     [PunRPC]
@@ -176,7 +178,7 @@ public class GameManager : MonoBehaviour
             && selectedcard.iscreature == true
             && localplayer.battlelinefilling[slot] == false)
         {
-            photonView.RPC("PlaceCard", PhotonTargets.All, slot);
+            photonView.RPC("PlaceCard", RpcTarget.All, slot);
             localplayer.DecreaseMana(selectedcard.element, selectedcard.manacost);
 
             TurnSequence();
@@ -193,7 +195,7 @@ public class GameManager : MonoBehaviour
         if(localplayer.hasturn == true && selectedcard.iscreature == false
             && localplayer.CheckMana(selectedcard.element, selectedcard.manacost) == true)
         {
-            photonView.RPC("UseSpell", PhotonTargets.All, slot);
+            photonView.RPC("UseSpell", RpcTarget.All, slot);
             localplayer.DecreaseMana(selectedcard.element, selectedcard.manacost);
 
             TurnSequence();
@@ -212,7 +214,7 @@ public class GameManager : MonoBehaviour
             && selectedcard.isfriendlyspell == true
             && localplayer.CheckMana(selectedcard.element, selectedcard.manacost) == true)
         {
-            photonView.RPC("UseFriendlySpell", PhotonTargets.All, slot);
+            photonView.RPC("UseFriendlySpell", RpcTarget.All, slot);
             localplayer.DecreaseMana(selectedcard.element, selectedcard.manacost);
 
             TurnSequence();
@@ -237,7 +239,7 @@ public class GameManager : MonoBehaviour
     public void SendChatMessage()
     {
         string s = "\n" + localplayer.playername + ":" + battleUIManager.inputchattext.text;
-        photonView.RPC("RPCSendChatMessage", PhotonTargets.All, s);
+        photonView.RPC("RPCSendChatMessage", RpcTarget.All, s);
         battleUIManager.inputchattext.text = "";
     }
     [PunRPC]

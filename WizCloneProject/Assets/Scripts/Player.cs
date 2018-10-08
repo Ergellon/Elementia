@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
-public class Player : Photon.MonoBehaviour{
+public class Player : MonoBehaviourPunCallbacks {
 
     GameLoader gameLoader;
     BattleLauncher battleLauncher;
@@ -57,7 +58,7 @@ public class Player : Photon.MonoBehaviour{
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
-        if (stream.isWriting)
+        if (stream.IsWriting)
         {
             stream.SendNext(playername);
             stream.SendNext(health);
@@ -107,7 +108,7 @@ public class Player : Photon.MonoBehaviour{
     
     void OnPhotonInstantiate(PhotonMessageInfo info)
     {
-        if (photonView.isMine)
+        if (photonView.IsMine)
         {
             battleLauncher = GameObject.FindGameObjectWithTag("BattleLauncher").GetComponent<BattleLauncher>();
             playername = battleLauncher.playername;

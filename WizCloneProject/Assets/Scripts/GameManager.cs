@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
 
-public class GameManager : MonoBehaviour
-{
+public class GameManager : MonoBehaviourPunCallbacks, IPunObservable
+{ 
 
     public BattleManager battleManager;
     public BattleUIManager battleUIManager;
@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     public Button backbutton;
 
 
-    PhotonView photonView;
+    new PhotonView photonView;
     void Start()
     {
         
@@ -61,10 +61,17 @@ public class GameManager : MonoBehaviour
 
 
 
+        //if (Random.value > 0.5)
+        //{
 
-
-        playerone.hasturn = true;
-        playerone.IncreaseMana();
+            playerone.hasturn = true;
+            playerone.IncreaseMana();
+       // }
+       // else
+       // {
+         //   playertwo.hasturn = true;
+         //   playertwo.IncreaseMana();
+        //}
         battleManager.attacker = playerone;
         battleManager.defender = playertwo;
         battleUIManager.UpdateStats();
@@ -74,6 +81,7 @@ public class GameManager : MonoBehaviour
     {
         if (playerone.spellbooksync == 1 && playertwo.spellbooksync == 1)
         {
+            battleUIManager.SetNames();
             LoadSpellbook();
 
             playertwo.spellbooksync = 2;
@@ -122,7 +130,7 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    void IPunObservable.OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
 
     }
@@ -297,5 +305,9 @@ public class GameManager : MonoBehaviour
     public void BackToMenuButton()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+    }
+    public void OnPlayerLeftRoom()
+    {
+        photonView.RPC("EndGame", RpcTarget.All);
     }
 }

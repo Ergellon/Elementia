@@ -39,6 +39,7 @@ public class BattleLauncher : MonoBehaviour
 
     public void ChangePlayerName()
     {      
+            
             playername = inputname.text;       
     }
     public void ChangePortrait (bool forward)

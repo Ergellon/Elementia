@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-public class Player : MonoBehaviourPunCallbacks {
+public class Player : MonoBehaviourPunCallbacks, IPunObservable, IPunInstantiateMagicCallback {
 
     GameLoader gameLoader;
     BattleLauncher battleLauncher;
@@ -40,8 +40,7 @@ public class Player : MonoBehaviourPunCallbacks {
         for (int i = 0; i<7; i++)
         {
             battlelinefilling[i] = false;
-        }
-        portraitnumber = battleLauncher.selectedportraitnumber;   
+        }  
         //FillSpellbook();
         //Debug.Log("Spellbook filled");
     }
@@ -56,7 +55,7 @@ public class Player : MonoBehaviourPunCallbacks {
     }
 	
 
-    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+     void IPunObservable.OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
         if (stream.IsWriting)
         {
@@ -71,17 +70,21 @@ public class Player : MonoBehaviourPunCallbacks {
             {
                 stream.SendNext(battlelinefilling[i]);
             }
-            if (sendspellbooknumbers == true)
-            {
+           // if (sendspellbooknumbers == true)
+           // {
                 for (int i = 0; i < 24; i++)
                 {
                     stream.SendNext(spellbooknumbers[i]);
                 }
                 stream.SendNext(portraitnumber);
+            //}
+            if (spellbooksync == 0)
+            {
+                spellbooksync = 1;
             }
 
         }
-        else
+        else if (stream.IsReading)
         {
             this.playername = (string)stream.ReceiveNext();
             this.health = (int)stream.ReceiveNext();
@@ -94,24 +97,35 @@ public class Player : MonoBehaviourPunCallbacks {
             {
                 this.battlelinefilling[i] = (bool)stream.ReceiveNext();
             }
-            for (int j = 0; j<24; j++)
+            if (spellbooksync == 0)
             {
-               this.spellbooknumbers[j] = (int)stream.ReceiveNext();
+                spellbooksync = 1;
             }
-            this.portraitnumber = (int)stream.ReceiveNext();
+            try
+            {
+                for (int j = 0; j < 24; j++)
+                {
+                    this.spellbooknumbers[j] = (int)stream.ReceiveNext();
+                }
+                this.portraitnumber = (int)stream.ReceiveNext();
+
+            }
+            catch(System.Exception  e)
+            {
+            }
+  
+
         }
-        if (spellbooksync == 0)
-        {
-            spellbooksync = 1;
-        }
+
     }
     
-    void OnPhotonInstantiate(PhotonMessageInfo info)
+    void IPunInstantiateMagicCallback.OnPhotonInstantiate(PhotonMessageInfo info)
     {
         if (photonView.IsMine)
         {
             battleLauncher = GameObject.FindGameObjectWithTag("BattleLauncher").GetComponent<BattleLauncher>();
             playername = battleLauncher.playername;
+            portraitnumber = battleLauncher.selectedportraitnumber;
         }
         gameLoader = GameObject.FindGameObjectWithTag("GameLoader").GetComponent<GameLoader>();
         gameLoader.playersready++;
@@ -209,6 +223,7 @@ public class Player : MonoBehaviourPunCallbacks {
             air -= amount;
         }
     }
+
 }
 
 

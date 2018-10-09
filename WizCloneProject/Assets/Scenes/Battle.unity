@@ -3749,7 +3749,7 @@ MonoBehaviour:
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 6
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
@@ -13015,7 +13015,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1732851159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16248,21 +16248,16 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 114466312784762386, guid: 9268374ee4020e7498390824d71d9b36,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 381731089}
-    - target: {fileID: 114466312784762386, guid: 9268374ee4020e7498390824d71d9b36,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 430483904}
     - target: {fileID: 114937699199875550, guid: 9268374ee4020e7498390824d71d9b36,
         type: 2}
       propertyPath: battleUIManager
       value: 
       objectReference: {fileID: 430483904}
+    - target: {fileID: 114466312784762386, guid: 9268374ee4020e7498390824d71d9b36,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 381731089}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9268374ee4020e7498390824d71d9b36, type: 2}
   m_IsPrefabAsset: 0
